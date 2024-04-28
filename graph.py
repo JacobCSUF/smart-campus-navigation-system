@@ -25,6 +25,7 @@ Campus_graph = {
 
 
 def dfs(visited, graph, node,search):  #function for dfs 
+    global distance
     if node not in visited:
         if node == search:
            dfs_stack.append(node)
@@ -34,7 +35,8 @@ def dfs(visited, graph, node,search):  #function for dfs
         for neighbour in graph[node]:
             if dfs(visited, graph, neighbour[0],search):
                 #when a target node is found we start appending the nodes to the list
-                dfs_stack.append([node,neighbour[1]])
+                dfs_stack.append(node)
+                distance += neighbour[1]
                 return True
         
         return False
@@ -43,18 +45,18 @@ def dfs(visited, graph, node,search):  #function for dfs
 
 
 ############## DFS #########################################
-
+distance = 0
 dfs_visited = set() # Set to keep track of visited nodes of graph.
 dfs_stack = [] #tracks path
 
 ### CHOOSE START/END 
 dfs(dfs_visited,Campus_graph,'Titan Gym','Visual Arts')
 dfs_stack.reverse()#reverses stack to represent path
-distance = 0
+
 
 #adds the total distance covered
-for i in range(len(dfs_stack)-1):
-    distance += dfs_stack[i][1]
+#for i in range(len(dfs_stack)-1):
+    #distance += dfs_stack[i][1]
 
 print(dfs_stack)
 print(distance)
