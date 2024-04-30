@@ -65,28 +65,35 @@ print(distance)
 
 ############ BFS ######################
 from collections import deque
-def bfs(graph, start, goal):
+
+def bfs_all(graph, start, goal):
 
     queue = deque([(start, [start], 0)])                        # Queue for BFS (node, path, distance)
-    bfs_visited = set()                                         # Set to keep track of visited nodes of graph
+    bfs_visited = set()
+    all_paths = []
     
     while queue:
         current_node, path, total_distance = queue.popleft()
+
         if current_node == goal:
-            return path, total_distance                         # Return path & distance if goal is reached
+            all_paths.append((path, total_distance))            # Store path & distance if a possible path is found
+            continue                                            # Continue to next node
         
         bfs_visited.add(current_node)                           # Mark current node as visited
 
         for neighbor, distance in graph[current_node]:          # Queue adjacent nodes
             if neighbor not in bfs_visited:
-                queue.append((neighbor, path + [neighbor], total_distance + distance))
+                new_path = path + [neighbor]
+                new_distance = total_distance + distance
+                queue.append((neighbor, new_path, new_distance))
 
-    return [], 0                                                # Return empty path & distance if no path found
+    return all_paths                                            # Return all possible paths & their distances
 
 # BFS test
-bfs_path, bfs_distance = bfs(Campus_graph, 'Titan Gym', 'Visual Arts')
-print("BFS Path:", bfs_path)
-print("BFS Distance:", bfs_distance)
+all_paths = bfs_all(Campus_graph, 'Titan Gym', 'Visual Arts')
+for path, distance in all_paths:
+    print("Path:", path)
+    print("Distance:", distance)
 
 
 ############## Dijkstra's ###############
