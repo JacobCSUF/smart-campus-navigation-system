@@ -64,7 +64,29 @@ print(distance)
 
 
 ############ BFS ######################
+from collections import deque
+def bfs(graph, start, goal):
 
+    queue = deque([(start, [start], 0)])                        # Queue for BFS (node, path, distance)
+    bfs_visited = set()                                         # Set to keep track of visited nodes of graph
+    
+    while queue:
+        current_node, path, total_distance = queue.popleft()
+        if current_node == goal:
+            return path, total_distance                         # Return path & distance if goal is reached
+        
+        bfs_visited.add(current_node)                           # Mark current node as visited
+
+        for neighbor, distance in graph[current_node]:          # Queue adjacent nodes
+            if neighbor not in bfs_visited:
+                queue.append((neighbor, path + [neighbor], total_distance + distance))
+
+    return [], 0                                                # Return empty path & distance if no path found
+
+# BFS test
+bfs_path, bfs_distance = bfs(Campus_graph, 'Titan Gym', 'Visual Arts')
+print("BFS Path:", bfs_path)
+print("BFS Distance:", bfs_distance)
 
 
 ############## Dijkstra's ###############
