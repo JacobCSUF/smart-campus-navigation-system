@@ -1,7 +1,8 @@
 """
 pip install -r requirements.txt
 """
-matplotlib==3.8.4 # pip install matplotlib
-scipy==1.13.0 # pip install scipy
-networkx==3.3 # pip install networkx
-numpy==1.26.4 # pip install numpy
+matplotlib==3.8.4
+scipy==1.13.0
+networkx==3.3
+numpy==1.26.4
+Pillow==10.3.0

@@ -1,0 +1,137 @@
+# Nutwood Parking:
+#     - Dan Black Hall: 815 feet
+#     - McCarthy Hall: 896 feet
+#     - Clayes Performing Arts Center: 747 feet
+#     - Visual Arts: 667 feet
+
+# Visual Arts:
+#     - Clayes Performing Arts Center: 421 feet
+#     - Titan Student Union: 357 feet
+#     - Nutwood Parking: 667 feet
+
+# Titan Student Union:
+#     - Visual Arts: 357 feet
+#     - Titan Bookstore: 337 feet
+#     - Recreation Center: 480 feet
+
+# Recreation Center:
+#     - Titan Student Union: 480 feet
+#     - Titan Gym: 500 feet
+#     - Titan Bookstore: 526 feet
+#     - Pollack Library: 930 feet
+
+# Clayes Performing Arts Center:
+#     - Visual Arts: 421 feet
+#     - Titan Bookstore: 490 feet
+#     - Pollack Library: 536 feet
+#     - Humanities: 746 feet
+#     - McCarthy Hall: 439 feet
+#     - Dan Black Hall: 574 feet
+#     - Nutwood Parking: 747 feet
+
+# Titan Bookstore:
+#     - Titan Student Union: 337 feet
+#     - Recreation Center: 526 feet
+#     - Titan Gym: 465 feet
+#     - Student Health: 887 feet
+#     - Pollack Library: 472 feet
+#     - Clayes Performing Arts Center: 490 feet
+
+# Titan Gym:
+#     - Recreation Center: 500 feet
+#     - Titan Bookstore: 465 feet
+#     - Student Health: 500 feet
+#     - Pollack Library: 605 feet
+#     - Education Classroom: 787 feet
+
+# Dan Black Hall:
+#     - Nutwood Parking: 815 feet
+#     - Langsdorf Hall: 411 feet
+#     - Clayes Performing Arts Center: 574 feet
+#     - McCarthy Hall: 165 feet
+#     - Pollack Library: 855 feet
+#     - Humanities: 679 feet
+
+# McCarthy Hall:
+#     - Humanities: 453 feet
+#     - Dan Black Hall: 165 feet
+#     - Nutwood Parking: 896 feet
+
+# Pollack Library:
+#     - Dan Black Hall: 855 feet
+#     - Clayes Performing Arts Center: 536 feet
+#     - Titan Bookstore: 472 feet
+#     - Recreation Center: 930 feet
+#     - Titan Gym: 580 feet
+#     - Student Health: 647 feet
+#     - Education Classroom: 600 feet
+#     - Humanities: 528 feet
+
+# Langsdorf Hall:
+#     - Dan Black Hall: 411 feet
+#     - SGMH: 227 feet
+#     - Carls Jr: 228 feet
+#     - Humanities: 520 feet
+#     - McCarthy Hall: 353 feet
+
+# Humanities:
+#     - Education Classroom: 337 feet
+#     - Pollack Library: 528 feet
+#     - Clayes Performing Arts Center: 746 feet
+#     - McCarthy Hall: 453 feet
+#     - Dan Black Hall: 679 feet
+#     - Langsdorf Hall: 520 feet
+#     - Carls Jr: 413 feet
+#     - Lot F: 338 feet
+
+# Education Classroom:
+#     - Humanities: 337 feet
+#     - Pollack Library: 600 feet
+#     - Titan Gym: 787 feet
+#     - Student Health: 600 feet
+#     - Engineering Building: 477 feet
+#     - Lot F: 497 feet
+
+# Student Health:
+#     - Titan Gym: 500 feet
+#     - Gastronome: 586 feet
+#     - Engineering Building: 409 feet
+#     - Education Classroom: 600 feet
+#     - Pollack Library: 647 feet
+#     - Titan Bookstore: 464 feet
+
+# SGMH:
+#     - Carls Jr: 256 feet
+#     - Langsdorf Hall: 227 feet
+
+# Carls Jr:
+#     - SGMH: 256 feet
+#     - Langsdorf Hall: 228 feet
+#     - Lot F: 461 feet
+#     - East Side Parking Structure: 694 feet
+#     - Humanities: 413 feet
+
+# Lot F:
+#     - Carls Jr: 461 feet
+#     - East Side Parking Structure: 380 feet
+#     - Gastronome: 985 feet
+#     - Engineering Building: 677 feet
+#     - Education Classroom: 497 feet
+#     - Humanities: 338 feet
+
+# Engineering Building:
+#     - Lot F: 677 feet
+#     - Gastronome: 416 feet
+#     - Student Health: 409 feet
+#     - Education Classroom: 477 feet
+
+# Gastronome:
+#     - Engineering Building: 416 feet
+#     - Student Health: 586 feet
+#     - Lot F: 985 feet
+#     - East Side Parking Structure: 1045 feet
+
+# East Side Parking Structure:
+#     - Carls Jr: 694 feet
+#     - Lot F: 380 feet
+#     - Gastronome: 1045 feet
