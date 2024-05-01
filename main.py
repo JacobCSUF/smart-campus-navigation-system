@@ -61,7 +61,7 @@ G = nx.DiGraph()
 G.add_weighted_edges_from(edges_distances)  
 
 # Set up matplotlib figure
-fig, ax = plt.subplots(figsize=(15, 12))
+fig, ax = plt.subplots(figsize=(15, 5))    # Y-Value needs to be adjusted. 12 does not work here
 ax.imshow(base_image)
 ax.axis('off')
 canvas = FigureCanvasTkAgg(fig, master=root)
