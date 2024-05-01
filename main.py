@@ -60,13 +60,22 @@ G = nx.DiGraph()
 # Use the imported edge distances
 G.add_weighted_edges_from(edges_distances)  
 
-# Set up matplotlib figure
-fig, ax = plt.subplots(figsize=(15, 12))
+# Set DPI for the figure
+dpi = 75
+
+# Calculate the size in inches (1920x1080 pixels)
+fig_width = 1280 / dpi
+fig_height = 720 / dpi
+
+# Create the figure with the specified size
+fig, ax = plt.subplots(figsize=(fig_width, fig_height), dpi=dpi)
 ax.imshow(base_image)
 ax.axis('off')
+
+# Create a FigureCanvasTkAgg object
 canvas = FigureCanvasTkAgg(fig, master=root)
 canvas_widget = canvas.get_tk_widget()
-canvas_widget.pack()
+canvas_widget.pack(fill='both', expand=True)
 
 # GUI components for node and algorithm selection
 start_var = tk.StringVar(value='Nutwood Parking')
@@ -78,7 +87,7 @@ results_var = tk.StringVar()
 results_var.set("Select start, end, and algorithm then press 'Calculate Path'")
 
 # Define a larger font for better visibility
-large_font = ('Helvetica', 18)
+large_font = ('Helvetica', 14)
 text_color = "blue"  # You can use color names or hexadecimal color codes
 
 # Dropdown and label placement
@@ -96,6 +105,11 @@ algorithm_dropdown.pack()
 
 # List to store results for display
 results_list = []
+
+# Draw labels colors
+nx.draw_networkx_labels(G, pos={node: positions[labels.index(node)] for node in G}, labels={node: node for node in G},
+                        font_color='blue', font_size=12, ax=ax,
+                        bbox=dict(facecolor='white', alpha=0.1, edgecolor='none'))
 
 # Function to update the graph based on user selections
 def update_graph():
