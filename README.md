@@ -1,6 +1,8 @@
 # smart-campus-navigation-system
 
 ## About this project
+- As you navigate the campus, you start to discover various paths. At times, you may wonder which path would be the fastest to reach your destination.
+This navigation project has been created to showcase three algorithms that you can use to map your path: Dijkstra, Breadth First Search (BFS), and Depth First Search (DFS).
 
 
 # 1. Installation Instructions
@@ -8,22 +10,17 @@
 
 - Extract the contents to the desired location to run
 
-- Run the 'main.py' file either through a terminal (linux) or by opening with python (windows)
-
+- Run the 'main.py'
+   
 # 2. Usage
 
-[Place images here of project step-by-step with guide]
 
 # 3. Troubleshoot
-
-## Windows
-
-## Linux
 
 
 # Authors
 - This section highlights the contributions of the authors of this code:
-  * [Name1]
-  * [Name2]
-  * [Name3]
-  * [Name4]
+  * Andrew Saleh
+  * Jacob Caranci
+  * Huy Nguyen
+  * Dylan Drake
