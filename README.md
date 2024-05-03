@@ -19,7 +19,6 @@ This navigation project has been created to showcase three algorithms that you c
 
 
 # Authors
-- This section highlights the contributions of the authors of this code:
   * Andrew Saleh
   * Jacob Caranci
   * Huy Nguyen
