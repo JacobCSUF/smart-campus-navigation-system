@@ -11,12 +11,6 @@ This navigation project has been created to showcase three algorithms that you c
 - Extract the contents to the desired location to run
 
 - Run the 'main.py'
-   
-# 2. Usage
-
-
-# 3. Troubleshoot
-
 
 # Authors
   * Andrew Saleh
