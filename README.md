@@ -1,8 +1,7 @@
 # smart-campus-navigation-system
 
 ## About this project
-- As you navigate the campus, you start to discover various paths. At times, you may wonder which path would be the fastest to reach your destination.
-This navigation project has been created to showcase three algorithms you can use to map your path: Dijkstra, Breadth First Search (BFS), and Depth First Search (DFS).
+- This program simulates a navigation device at CSUF. It can help show the fastest path between two separate locations at CSUF. This project involves using BFS, DFS, and Dijkstra's algorithm to compute different paths from two locations. Run the main.py file to execute the program.
 
 # Authors
   * Andrew Saleh
