@@ -8,3 +8,6 @@
   * Jacob Caranci
   * Huy Nguyen
   * Dylan Drake
+
+                                                      
+![Screenshot (642)](https://github.com/JacobCSUF/AnimalGuessingGame/assets/111834945/e18923bb-e67a-4d8a-a855-b8776d1cd85b)
